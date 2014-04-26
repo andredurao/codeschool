@@ -1,4 +1,10 @@
 group :test do
 	gem 'should'
 	gem 'mocha'
+	gem 'capybara'
+end
+
+
+group :development, :test do
+	gem 'factory_girl_rails'
 end
