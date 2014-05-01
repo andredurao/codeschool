@@ -1,0 +1,9 @@
+
+
+
+
+
+curl -i -X POST -d 'episode[title]=ZombieApocalypseNow' http://localhost:3000/episodes
+-i = response headers with body
+-X = specify method for request
+-d = data along request
