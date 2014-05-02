@@ -1,9 +1,22 @@
 
 
 
-
-
 curl -i -X POST -d 'episode[title]=ZombieApocalypseNow' http://localhost:3000/episodes
 -i = response headers with body
 -X = specify method for request
 -d = data along request
+
+
+
+Basic authentication for curl
+curl -Iu 'carlos:secret' http://localhost:3000/episodes
+	same as
+curl -I http://carlos:secret@localhost:3000/episodes
+
+
+
+Token authentication
+curl -IH 'Authorization: Token token=3w0sefij3irs3efs3s3fw3' http://localhost:3000
+
+
+curl -I -H 'Authorization: Token token=fake' -H 'Accept: application/json' http://localhost:3000
