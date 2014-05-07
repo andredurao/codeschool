@@ -1,0 +1,1 @@
+Tweet.find_each(batch_size: 5) { |t| puts t.status }
